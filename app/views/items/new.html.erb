@@ -1,0 +1,14 @@
+<div class="contents row">
+  <div class="container">
+    <%= form_for @item do |form| %>
+      <h3>
+        出品ページ
+      </h3>
+      <%= form.text_field :item_name, placeholder: "商品名" %>
+      <%= form.file_field :image, placeholder: "出品する画像" %>
+      <%= form.text_field :price, placeholder: "価格" %>
+      <%= form.text_area :comment, placeholder: "商品の説明" , rows: "10" %>
+      <%= form.submit "出品" %>
+    <% end %>
+  </div>
+</div>

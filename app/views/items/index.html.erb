@@ -1,0 +1,11 @@
+<div class= "item_container">
+  <% @items.each do |item| %>
+  <ul class="items_box">
+    <%= link_to "items/#{item.id}" do %>
+      <%= image_tag "#{item.image}", class: "item_image" %>
+      <li class= "item_name"><%= item.item_name %></li>
+        <li class= "item_price" >¥<%= item.price %></li>  
+    <% end %>
+  </ul>
+  <% end %>
+</div>
