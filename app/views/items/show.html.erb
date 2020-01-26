@@ -1,0 +1,23 @@
+<div class="postTitle">
+  <%= @items.item_name %>
+</div>
+<div class="postDate">
+  <%= image_tag "#{@items.image}", class: "item_image" %>
+</div>
+  <p class= "item_price" >¥<%= @items.price %></p>  
+</div>
+<div class="postText">
+  <%= simple_format @items.comment %>
+</div>
+
+<div class="more">
+  
+  <ul class="more_list">
+    <li>
+      <%= link_to '編集', "/items/#{@items.id}/edit", method: :get %>
+    </li>
+    <li>
+      <%= link_to '出品取消', "/items/#{@items.id}", method: :delete %>
+    </li>
+  </ul>
+</div>

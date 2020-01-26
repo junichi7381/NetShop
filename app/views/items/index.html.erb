@@ -1,3 +1,5 @@
+<%= render partial: "items/header" %>
+
 <div class= "item_container">
   <% @items.each do |item| %>
   <ul class="items_box">
@@ -9,3 +11,5 @@
   </ul>
   <% end %>
 </div>
+
+<%= render partial: "items/footer" %>

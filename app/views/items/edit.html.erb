@@ -2,13 +2,13 @@
   <div class="container">
     <%= form_for @item do |form| %>
       <h3>
-        出品ページ
+        編集ページ
       </h3>
       <%= form.text_field :item_name, placeholder: "商品名" %>
       <%= form.text_field :image, placeholder: "出品する画像" %>
       <%= form.text_field :price, placeholder: "価格" %>
       <%= form.text_area :comment, placeholder: "商品の説明" , rows: "100" %>
-      <%= form.submit "出品" %>
+      <%= form.submit "再出品" %>
     <% end %>
   </div>
 </div>
