@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :items
   resources :users, only: [:show ] 
 
-  get 'users/items/:id', to: 'users#show', as: 'users_items'
+  # get 'users/items/:id', to: 'users#show', as: 'users_items'
 
 end
