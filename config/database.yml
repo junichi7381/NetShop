@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: Net_shop_production
-  username: Net_shop
-  password: <%= ENV['NET_SHOP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  scket: /var/lib/mysql/mysql.sock
