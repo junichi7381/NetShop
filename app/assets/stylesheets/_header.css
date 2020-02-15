@@ -1,0 +1,47 @@
+/* 「ヘッダー」ブロック */
+.header_bar {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: solid 2px orange;
+}
+
+.title a {
+  font-size: 30px;
+  color: #696969;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_box {
+  font-family: 'Exo 2', sans-serif;
+  list-style-type: none;
+  padding: 5px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.head_btn a {
+  font-weight: bold;
+  text-decoration: none;
+  background: skyblue;
+  color:white;
+  margin: 0 10px;
+  padding:5px 15px;
+  border-radius: 20px;
+}
+
+.head_text_box {
+  display: flex;
+  justify-content: center;
+}
+
+.head_text {
+  color: #696969;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  margin-right: 20px;
+}

@@ -12,8 +12,8 @@
        
         <li class= "item_btn1"><%= link_to '編 集', "/items/#{item.id}/edit", method: :get %></li>
         <li class= "item_btn2"><%= link_to '出品取消', "/items/#{item.id}", method: :delete %></li>
-        <li class="item_comment"><%= simple_format item.comment %></li>
-       
+        <%# <li class="item_comment"><%= simple_format item.comment %></li>
+        %>
   
     </ul>
     

@@ -1,14 +1,14 @@
 <%= render partial: "items/header" %>
 
-<div class= "item_container">
+<div class= "items_container">
   <% @items.each do |item| %>
-  <ul class="items_box">
+  <div class="item_box">
     <%= link_to "items/#{item.id}" do %>
-      <%= image_tag "#{item.image}", class: "item_image" %>
-      <li class= "item_name"><%= item.item_name %></li>
-        <li class= "item_price" >¥<%= item.price %></li>  
+    <p class= "item_image" ><%= image_tag "#{item.image}" %></p>
+    <p class= "item_name" ><%= item.item_name %></p>
+    <p class= "item_price" >¥<%= item.price %></p>  
     <% end %>
-  </ul>
+  </div>
   <% end %>
 </div>
 
