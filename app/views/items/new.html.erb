@@ -1,13 +1,12 @@
 <div class="contents row">
   <div class="container">
     <%= form_for @item do |form| %>
-      <h3>
-        出品ページ
-      </h3>
-      <%= form.text_field :item_name, placeholder: "商品名" %>
-      <%= form.text_field :image, placeholder: "出品する画像" %>
+      <h3>出品ページ</h3>
+      <label for="mymail">商品名<span class="required">必須</span></label>
+      <%= form.text_field :item_name, placeholder: "商品名（必須40文字以内）", maxlength: "40" %>
+      <%= form.text_field :image, placeholder: "出品画像" %>
       <%= form.text_field :price, placeholder: "価格" %>
-      <%= form.text_area :comment, placeholder: "商品の説明" , rows: "20" %>
+      <%= form.text_area :comment, placeholder: "商品の説明（必須1,000文字以内）" , rows: "20", maxlength: "1000" %>
       <%= form.submit "出品" %>
     <% end %>
   </div>

@@ -1,18 +1,23 @@
-<header class="header">
-  <div class="header__bar row">
-    <h1 class="grid-6"><a href="/">NetShop</a></h1>
+<header>
+  <div class="header_bar">
+    <h1 class="title"><a href="/">NetShop</a></h1>
     <% if user_signed_in? %>
-      <div class="user_nav grid-6">
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-        <%= link_to  "出品する", "/items/new", class: "post" %>
-        <%= link_to "マイページ", "/users/#{current_user.id}" %>
-      </div>
+      <ul class="menu_box">
+        <li class="head_btn"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        <li class="head_btn"><%= link_to "出品する", "/items/new" %></li>
+        <li class="head_btn"><%= link_to "マイページ", "/users/#{current_user.id}" %></li>
+      </ul>
 
     <% else %>
-      <div class="grid-6">
-        <%= link_to "ログイン", new_user_session_path, class: 'post' %>
-        <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
-      </div>
+      <ul class="menu_box">
+        <li class="head_btn"><%= link_to "ログイン", new_user_session_path %></li>
+        <li class="head_btn"><%= link_to "新規登録", new_user_registration_path %></li>
+      </ul>
+        <div class="head_text_box">
+          <p class="head_text">User1:email:12345@12345, pw:1234567</p>
+          <p class="head_text">User2:email:67890@67890, pw:1234567</p>
+        </div>
+
     <% end %>
   </div>
 </header>
