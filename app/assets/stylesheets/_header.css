@@ -5,7 +5,7 @@
   border-bottom: solid 2px orange;
 }
 
-.title a {
+.header_title a {
   font-size: 30px;
   color: #696969;
   text-align: center;
@@ -17,7 +17,7 @@
 }
 
 .menu_box {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   list-style-type: none;
   padding: 5px 0 10px 0;
   display: flex;

@@ -1,0 +1,56 @@
+/* body {
+  background-color: #EEFFFF;
+  display: flex;
+  justify-content: space-around;
+} */
+
+.top_bar {
+  width: 500px;
+  height: 100%;
+  background-color: #FFFFFF;
+} 
+
+.mypage_title a {
+  font-size: 30px;
+  color: #696969;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 0;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px orange;
+}
+
+.success_comment {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin: 20px 0;
+} 
+
+.mypage_back {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color:#ffffff;
+  padding: 5px 10px;
+  margin: 20px 100px;
+  border-radius: 30px;
+  background: #FF3333;
+  text-decoration: none;
+} 
+
+.bottom_bar {
+  border-top: solid 2px orange;
+  padding: 20px 15px;
+  color: #696969;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  margin-bottom: 0;
+}
+

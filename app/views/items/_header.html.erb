@@ -1,6 +1,6 @@
 <header>
   <div class="header_bar">
-    <h1 class="title"><a href="/">NetShop</a></h1>
+    <h1 class="header_title"><a href="/">NetShop</a></h1>
     <% if user_signed_in? %>
       <ul class="menu_box">
         <li class="head_btn"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
