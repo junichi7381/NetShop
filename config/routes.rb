@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :items
   resources :users, only: [:show ] 
 
-  # get 'users/items/:id', to: 'users#show', as: 'users_items'
+  put 'users/:id', to: 'devise/registrations#update', as: 'users_update'
+  delete 'users/:id', to: 'devise/registrations#destroy', as: 'users_destroy'
+  post 'users/:id', to: 'devise/registrations#create', as: 'users_create'
 
 end

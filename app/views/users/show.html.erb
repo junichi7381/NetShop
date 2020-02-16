@@ -1,24 +1,18 @@
 <%= render partial: "items/header" %>
 
-<div class="contents row">
-
-  <div class= "item_container">
-    <% @items.each do |item| %>
-    <ul class="items_box">
-     
-        <%= image_tag "#{item.image}", class: "item_image" %>
-        <li class= "item_name"><%= item.item_name %></li>
-        <li class= "item_price" >¥<%= item.price %></li>
-       
-        <li class= "item_btn1"><%= link_to '編 集', "/items/#{item.id}/edit", method: :get %></li>
-        <li class= "item_btn2"><%= link_to '出品取消', "/items/#{item.id}", method: :delete %></li>
-        <%# <li class="item_comment"><%= simple_format item.comment %></li>
-        %>
-  
-    </ul>
-    
-      <% end %>
+<div class= "item_container">
+  <% @items.each do |item| %>
+  <div class="item_box">
+  <div class="img_box">
+  <p class= "item_img" ><%= image_tag "#{item.image}"%></p>
   </div>
+  <p class= "item_text"><%= item.item_name %></p>
+  <p class= "item_text" >¥<%= item.price %></p>
+  <p class= "item_text"><%= link_to '編 集', "/items/#{item.id}/edit", method: :get %></p>
+  <p class= "item_text"><%= link_to '出品取消', "/items/#{item.id}", method: :delete %></p>
+  </div>
+
+  <% end %>
 </div>
 
 <%= render partial: "items/footer" %>
