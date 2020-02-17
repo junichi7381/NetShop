@@ -1,13 +1,14 @@
-/* body {
-  background-color: #EEFFFF;
+.mypageback_conteiner {
   display: flex;
-  justify-content: space-around;
-} */
+  justify-content: center;
+}
 
-.top_bar {
+.mypageback_box {
+  display: inline-block;
   width: 500px;
   height: 100%;
   background-color: #FFFFFF;
+  text-align: center;
 } 
 
 .mypage_title a {
@@ -15,7 +16,7 @@
   color: #696969;
   text-align: center;
   padding-bottom: 20px;
-  margin-top: 0;
+  margin-top: 20px;
   font-weight: bold;
   text-decoration: none;
   display: flex;
@@ -31,16 +32,17 @@
   margin: 20px 0;
 } 
 
-.mypage_back {
+.mypage_back a {
+  display: inline-block;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   color:#ffffff;
-  padding: 5px 10px;
-  margin: 20px 100px;
+  padding: 5px 30px;
+  margin-bottom: 20px;
   border-radius: 30px;
-  background: #FF3333;
+  background: skyblue;
   text-decoration: none;
 } 
 
