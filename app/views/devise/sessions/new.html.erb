@@ -1,26 +1,33 @@
-<h2>Log in</h2>
-
+<div classs="page_conteiner">
+  <div class="page_box">
+<div class="sign_title">ログイン</div>
+<div class="sign_box">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :メールアドレス, {class: "field_name"} %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
+    <%= f.label :パスワード, {class: "field_name"}  %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
     <div class="field">
       <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+      <%= f.label :パスワードを記憶する, {class: "field_name"}  %>
     </div>
   <% end %>
 
-  <div class="actions">
+  <div class="sign_actions">
     <%= f.submit "ログイン" %>
   </div>
 <% end %>
 
+<div class="sign_links">
 <%= render "devise/shared/links" %>
+</div>
+</div>
+
+ <p class="bottom_bar">&copy; NetShop 2020.</p>

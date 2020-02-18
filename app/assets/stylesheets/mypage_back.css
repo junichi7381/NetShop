@@ -1,9 +1,9 @@
-.mypageback_conteiner {
+.page_conteiner {
   display: flex;
   justify-content: center;
 }
 
-.mypageback_box {
+.page_box {
   display: inline-block;
   width: 500px;
   height: 100%;

@@ -1,0 +1,75 @@
+.page_conteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.page_box {
+  display: inline-block;
+  width: 500px;
+  height: 100%;
+  background-color: #FFFFFF;
+} 
+
+.sign_title {
+  font-size: 25px;
+  color: #696969;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px orange;
+}
+
+.sign_box {
+  padding: 20px;
+  
+
+}
+
+.field_name {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  padding: 5px 0;
+  color: black;  
+} 
+
+.sign_actions {
+  margin: 20px;
+}
+
+.sign_links a {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  padding: 5px 0;
+  color: black;
+  text-indent: 5px;
+  text-decoration: none;  
+}
+
+.mypage_back a {
+  display: inline-block;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color:#ffffff;
+  padding: 5px 30px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background: skyblue;
+  text-decoration: none;
+} 
+
+.bottom_bar {
+  border-top: solid 2px orange;
+  padding: 20px 15px;
+  color: #696969;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  margin-bottom: 0;
+}
+

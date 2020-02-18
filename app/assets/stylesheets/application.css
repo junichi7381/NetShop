@@ -1,10 +1,11 @@
-@import "_reset";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "setting";
-/* @import "font-awesome-sprockets"; */
-/* @import "./font-awesome"; */
 @import "_reset";
 @import "_header";
 @import "_footer";
 @import "main";
+@import "sign_login";
 @import "mypage_back";
+@import "new";
 @import "users";
