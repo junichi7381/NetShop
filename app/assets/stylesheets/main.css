@@ -2,77 +2,53 @@
   width: 100%;
   margin: 0 auto;
   padding: 30px;
+  display: flex;
+  justify-content: center;
 
 }
 
-.items_box {
+.item_box a {
   display: inline-block;
-  height: 400px;
   width: 180px;
+  height: auto;
   margin: 20px;
-  position: relative;
+  /* position: relative; */
   /* cursor: pointer; */
   list-style: none;
   background-color: powderblue;
-  transition: background-color .5s;
+  transition: all .5s;
   border: solid 1px black;
-  box-shadow:0px 0px 10px;
-  
+  /* box-shadow:0px 0px 10px; */
+  text-decoration: none;
 }
-  
-  .item_image {
-    height: 200px;
-    width: 180px;
-    background: none;
-  }
 
-  .item_name {
-    /* height: 26px; */
-    width: 180px;
+.img_box {
+  height: 200px;
+  width: 180px;
+}
+
+
+
+.item_img {
+  max-width: 100%;
+  height: auto;
+  /* width: 180px; */
+  /* background-position: center; */
+  /* background: none; */
+}
+
+  .item_text {
+    width: 100%;
     color: black;
-    font-size: 15px;
+    font-size: 16px;
     padding: 5px 0 5px 0;
     background-color: rgb(250, 200, 250);
     text-align: center;
-    position: absolute;
-    top:200px;
+    /* position: absolute;
+    bottom: 0; */
   }
 
-  .item_price {
-    /* height: 26px; */
-    color: black;
-    font-size: 15px;
-    width: 180px;
-    padding: 5px 0 5px 0;
-    background-color: rgba(255, 200, 250);
-    text-align: center;
-    position: absolute;
-    top:230px;
-  }
-
-  .item_btn1 {
-    /* height: 26px; */
-    color: black;
-    font-size: 15px;
-    width: 180px;
-    padding: 5px 0 5px 0;
-    background-color: rgb(255, 200, 250);
-    text-align: center;
-    position: absolute;
-    top:260px;
-  }
-
-  .item_btn2 {
-    /* height: 26px; */
-    color: black;
-    font-size: 15px;
-    width: 180px;
-    padding: 5px 0 5px 0;
-    background-color: rgb(255, 200, 250);
-    text-align: center;
-    position: absolute;
-    top:290px;
-  }
+  
 
   .item_comment {
     /* height: 26px; */

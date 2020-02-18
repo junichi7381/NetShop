@@ -1,8 +1,9 @@
-<div class="contents row">
-  <div class="success">
-    <h3>
-      出品が完了しました。
-    </h3>
-    <a class="btn" href="/items">出品一覧へ戻る</a>
+<div classs="page_conteiner">
+  <div class="page_box">
+    <h1 class="maypage_title"><a href="/">NetShop</a></h1>
+    <p class="success_comment">出品が完了しました</p>  
+    <p class="mypage_back"><%= link_to "マイページへ戻る", "/users/#{current_user.id}" %></p>
+    <p class="bottom_bar">&copy; NetShop 2020.</p>
   </div>
 </div>
+
