@@ -1,0 +1,52 @@
+.exhi_box {
+  padding: 20px;
+}
+
+.exhi_space {
+  width: 100%;
+}
+
+.exhibition {
+  font-size: 14px;
+  height: 20px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+  
+}
+
+
+.exhi_name {
+  font-size: 16px;
+
+  margin: 20px;
+  padding: 5px;
+}
+
+.required {
+  font-size: 12px;
+  margin-left: .3em;
+  color: red;
+  padding: 3px;
+  background-color: #fee;
+  font-weight: bold;
+}
+
+
+
+.exhi_btn {
+  /* display: inline-block; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color:#ffffff;
+  width: 100%;
+  padding: 5px 30px;
+  margin: 20px 0 20px 0;
+  border-radius: 30px;
+  background: skyblue;
+  text-decoration: none;
+  border: none;
+} 
