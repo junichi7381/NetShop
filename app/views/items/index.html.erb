@@ -4,7 +4,7 @@
   <div class="item_box">
     <%= link_to "items/#{item.id}" do %>
     <div class="img_box">
-    <p class= "item_img" ><%= image_tag "#{item.image}" %></p>
+    <p><%= image_tag "#{item.image}", :width => "180" %></p>
     </div>
     <p class= "item_text" ><%= item.item_name %></p>
     <p class= "item_text" >¥<%= item.price %></p>  

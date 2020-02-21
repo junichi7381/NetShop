@@ -5,6 +5,7 @@
 @import "_header";
 @import "_footer";
 @import "main";
+@import "user_show";
 @import "sign_login";
 @import "mypage_back";
 @import "exhibition";
