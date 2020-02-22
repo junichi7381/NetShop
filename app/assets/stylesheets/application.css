@@ -1,10 +1,14 @@
 @import "font-awesome-sprockets";
-@import "font-awesome";
+/* @import "font-awesome"; */
 @import "setting";
 @import "_reset";
+@import "slick-theme"; 
+@import "slick";
+@import "carousel";
 @import "_header";
 @import "_footer";
 @import "main";
+@import "slideshow";
 @import "user_show";
 @import "sign_login";
 @import "mypage_back";

@@ -68,6 +68,7 @@ gem 'sprockets', '3.7.2'
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'devise'
+gem 'jquery-rails'
 
 group :production do
   gem 'unicorn', '5.4.1'
