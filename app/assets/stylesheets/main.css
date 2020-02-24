@@ -1,11 +1,9 @@
-/* .items_container {
+.items_container {
   width: 100%;
   margin: 0 auto;
   padding: 30px;
-  display: flex;
-  justify-content: center;
-
-} */
+  float: left;
+}
 
 .item_box a {
   display: inline-block;
@@ -15,9 +13,8 @@
   list-style: none;
   background-color: white;
   transition: all .5s;
-  border: solid 1px black;
+  border: solid 1.5px black;
   
-  text-decoration: none;
 }
 
 .img_box {

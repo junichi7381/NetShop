@@ -1,15 +1,24 @@
 <%= render partial: "items/header" %>
 
-  <% @items.each do |item| %>
-  <div class="item_box">
-    <%= link_to "items/#{item.id}" do %>
-    <div class="img_box">
-    <p><%= image_tag "#{item.image}", :width => "180" %></p>
+  <div class="slideshow">
+    <div class="slideshow_img"><%= image_tag '1.jpeg' %></div>
+    <div class="slideshow_img"><%= image_tag '2.jpeg' %></div>
+    <div class="slideshow_img"><%= image_tag '3.jpeg' %></div>
+    <div class="slideshow_img"><%= image_tag '4.jpeg' %></div>
+  </div>
+  
+  <div class="items_container">
+    <% @items.each do |item| %>
+    <div class="item_box">
+      <%= link_to "items/#{item.id}" do %>
+      <div class="img_box">
+      <p><%= image_tag "#{item.image}", :width => "180" %></p>
+      </div>
+      <p class= "item_text" ><%= item.item_name %></p>
+      <p class= "item_text" >¥<%= item.price %></p>  
+      <% end %>
     </div>
-    <p class= "item_text" ><%= item.item_name %></p>
-    <p class= "item_text" >¥<%= item.price %></p>  
     <% end %>
   </div>
-  <% end %>
 
 <%= render partial: "items/footer" %>
