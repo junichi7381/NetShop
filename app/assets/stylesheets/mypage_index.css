@@ -1,11 +1,10 @@
-
 .user_item {
   display: inline-block;
   width: 180px;
   height: auto;
   margin: 20px;
   list-style: none;
-  
+  text-decoration: none;
   transition: all .5s;
   border: solid 1px black;
   
@@ -13,13 +12,15 @@
 
   .item_link {
     width: 180px;
-    color: black;
+    color: #FF3333;
+    font-weight: bold;
     font-size: 16px;
     padding: 10px 0 10px 0;
-    background-color: #FFDDFF;
+    background-color: white;
     text-align: center;
-    /* text-decoration: none; */
+    
   }
 
-
-  
+  a {
+    text-decoration: none;
+  }

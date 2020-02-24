@@ -15,7 +15,7 @@
       <p><%= image_tag "#{item.image}", :size => "180x200" %></p>
       </div>
       <p class= "item_text" ><%= item.item_name %></p>
-      <p class= "item_text" >¥<%= item.price %></p>  
+      <p class= "item_text" ><%= number_to_currency(item.price, unit: "¥", strip_insignificant_zeros: true) %></p>  
       <% end %>
       </div>
     <% end %>

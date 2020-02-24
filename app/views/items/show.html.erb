@@ -1,15 +1,14 @@
 <%= render partial: "items/header" %>
 
-<div class="postTitle">
-  <%= @item.item_name %>
-</div>
-<div class="postDate">
-  <%= image_tag "#{@item.image}", class: "item_image" %>
-</div>
-  <p class= "item_price" >¥<%= @item.price %></p>  
-</div>
-<div class="postText">
-  <%= simple_format @item.comment %>
+<div class="show_conteiner">
+  <p class="show_name">商品名：<%= @item.item_name %></p>
+  <p class="show_img"><%= image_tag "#{@item.image}", :size=> "300x400" %></p>
+  <p class= "show_price" >価格：<%= number_to_currency(@item.price, unit: "¥", strip_insignificant_zeros: true) %></p>  
+  
+  <div class="show_block">
+  <p class="show_comment"><%= simple_format @item.comment %></p>
+
+  </div>
 </div>
 
 <%= render partial: "items/footer" %>
